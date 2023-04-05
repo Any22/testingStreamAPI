@@ -12,10 +12,5 @@ public class StreamUnitTestDemoApplication {
 		SpringApplication.run(StreamUnitTestDemoApplication.class, args);
 	}
 
-	 @Bean
-	    public Customer customer() {
 
-		return new Customer();
-
-	}
 }
