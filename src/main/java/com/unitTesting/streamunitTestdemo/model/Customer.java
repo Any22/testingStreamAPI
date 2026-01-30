@@ -1,8 +1,10 @@
 package com.unitTesting.streamunitTestdemo.model;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Customer {
 	private String customerId;
-	private static int id ;
+	//making it thread safe 
+	private static final AtomicInteger id = new AtomicInteger(1);
 	private String customerName;
 	private int customerAge;
 
