@@ -3,8 +3,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Customer {
 	private String customerId;
-	//making it thread safe 
-	private static final AtomicInteger id = new AtomicInteger(1);
+	private static int id;
+	// for making it thread safe (recommended)
+	//private static final AtomicInteger id = new AtomicInteger(1);
 	private String customerName;
 	private int customerAge;
 
